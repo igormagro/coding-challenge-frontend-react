@@ -1,0 +1,32 @@
+.root {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  /* width: 80px; */
+  height: 100%;
+  margin-right: 32px;
+}
+
+.title_box{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+}
+
+.title_box h1,p{
+  margin: 0;
+}
+.title_box h1{
+  font-size: 4rem;
+}
+.title_box p{
+  font-size: 2rem;
+}
