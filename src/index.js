@@ -1,20 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css"
 import App from "./App";
-import Header from "./Components/Header/Header";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        fontFamily: ["Roboto Slab", "serif"].join(","),
-      }}
-    >
-      <Header />
-      {/* <App address={"Berlin, 10589, DE"} /> */}
+    <div className="body">
+      <App />
     </div>
   </React.StrictMode>,
   document.getElementById("root")
