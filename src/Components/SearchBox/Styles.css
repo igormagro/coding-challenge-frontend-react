@@ -37,8 +37,6 @@ input {
 }
 .btn:hover {
   background-color: rgb(161, 160, 160);
-  transition: all 0.8s;
-  font-weight: bold;
 }
 
 .ipt_description {
