@@ -1,0 +1,39 @@
+.cardRoot {
+  padding: 20px 20px 0;
+}
+
+.card {
+  width: -webkit-fill-available;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  border: 2px solid black;
+}
+
+.col {
+  height: 100%;
+}
+
+.text {
+  padding: 0 10px;
+}
+
+.link,
+.link:visited {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+.date {
+  position: absolute;
+  bottom: 20px;
+}
+
+.bikeImg {
+  height: 100%;
+  width: 120px;
+}

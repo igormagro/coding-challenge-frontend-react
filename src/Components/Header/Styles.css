@@ -1,0 +1,38 @@
+.root {
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  /* width: 80px; */
+  height: 100%;
+  margin-right: 32px;
+}
+
+.title_box {
+  display: inline-flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.title_box:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title_box h1,
+p {
+  margin: 0;
+}
+.title_box h1 {
+  font-size: 3rem;
+}
+.title_box p {
+  font-size: 2rem;
+}
