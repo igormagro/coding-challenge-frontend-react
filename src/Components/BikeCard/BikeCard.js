@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Styles.css";
 
@@ -11,7 +12,7 @@ const BikeCard = (props) => {
     );
 
     if (props.description && props.description.length > 100) {
-      const dscpt = [props.description.substring(0, 100),"..."].join("");
+      const dscpt = [props.description.substring(0, 100), "..."].join("");
       setShownDexcription(dscpt);
     } else {
       setShownDexcription(props.description);
@@ -26,7 +27,20 @@ const BikeCard = (props) => {
         </div>
         <div className="col text">
           <p>
-            <a href={"#"}>{props.title}</a>
+            <Link
+              className="link"
+              to={{
+                pathname: `/case/${props.id}`,
+                state: {
+                  date: date.join(" "),
+                  address: props.address,
+                  title: props.title,
+                  description: props.description,
+                },
+              }}
+            >
+              {props.title}
+            </Link>
           </p>
           <p>{shownDescription}</p>
           <p className="date">

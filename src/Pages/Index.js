@@ -170,6 +170,7 @@ const Index = () => {
           {displayed.map((el) => {
             return (
               <BikeCard
+                id={el.id}
                 key={el.id}
                 title={el.title}
                 description={el.description}
